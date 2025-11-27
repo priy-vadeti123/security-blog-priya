@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Network Security — A Practical Guide</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Network Security: A Practical Guide</h1>
+    <p class="tagline">Protecting confidentiality, integrity & availability in modern networks</p>
+    <nav>
+      <button data-target="intro" class="nav-btn active">Introduction</button>
+      <button data-target="threats" class="nav-btn">Common Threats</button>
+      <button data-target="best" class="nav-btn">Best Practices</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="intro" class="panel visible">
+      <h2>Introduction</h2>
+      <p>Network security refers to the collection of tools, technologies, policies, and practices designed to protect the integrity, confidentiality, and availability of computer networks and data. As cyber threats continue to grow in complexity, securing digital environments has become essential.</p>
+      <p>Network security aims to stop unauthorized access, misuse, malfunction, modification, destruction, or improper disclosure of the information and systems that rely on networks.</p>
+    </section>
+
+    <section id="threats" class="panel">
+      <h2>Common Network Security Threats</h2>
+      <ol>
+        <li><strong>Malware</strong> — Viruses, worms, trojans, and ransomware can disrupt systems, steal data, or take control of devices.</li>
+        <li><strong>Phishing</strong> — Deceptive emails, messages, or websites trick users into revealing confidential information.</li>
+        <li><strong>DDoS</strong> — Distributed Denial-of-Service floods a target with traffic causing outages.</li>
+        <li><strong>Man-in-the-Middle (MITM)</strong> — Interceptors secretly relay and possibly alter communication between two parties.</li>
+        <li><strong>Insider Threats</strong> — Employees or contractors may accidentally or intentionally compromise security.</li>
+      </ol>
+    </section>
+
+    <section id="best" class="panel">
+      <h2>Best Practices</h2>
+      <ol>
+        <li><strong>Implement Strong Access Controls</strong>
+          <p>Use multi-factor authentication (MFA), enforce strong passwords, and apply role-based access control.</p>
+        </li>
+        <li><strong>Keep Systems Updated</strong>
+          <p>Regular patching prevents attackers from exploiting known vulnerabilities.</p>
+        </li>
+        <li><strong>Use Firewalls & IDS/IPS</strong>
+          <p>Monitor and control traffic and alert defenders to suspicious activity.</p>
+        </li>
+        <li><strong>Encrypt Data</strong>
+          <p>Protect data in transit and at rest using modern cryptographic standards.</p>
+        </li>
+        <li><strong>Conduct Regular Security Training</strong>
+          <p>Train employees to recognise phishing and follow safe practices.</p>
+        </li>
+        <li><strong>Backup Critical Data</strong>
+          <p>Maintain regular, tested backups to recover from attacks or failures.</p>
+        </li>
+      </ol>
+
+      <div class="callout">
+        <strong>Tip:</strong> Security works best in layers. Combine technical controls, processes, and user training.
+      </div>
+    </section>
+
+    <aside class="interactive">
+      <h3>Quick Quiz</h3>
+      <p>Click the correct answer:</p>
+      <div class="quiz">
+        <p>Which practice protects data while it's being transmitted?</p>
+        <button class="quiz-btn" data-answer="encrypt">Encrypting it</button>
+        <button class="quiz-btn" data-answer="backup">Backing it up</button>
+        <button class="quiz-btn" data-answer="mfa">Using MFA</button>
+      </div>
+      <p id="quiz-result" class="result"></p>
+      <hr>
+      <label class="switch"><input id="themeToggle" type="checkbox"><span class="slider"></span></label> Toggle dark theme
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Network Security Blog — Learn, Protect, Repeat.</p>
+  </footer>
+</body>
+</html>
